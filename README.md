@@ -14,6 +14,14 @@
   <img src="https://img.shields.io/github/v/tag/smoka7/hop.nvim?color=pink&label=release&style=for-the-badge"/>
 </p>
 
+**NOTICE** is a fork of the [original hop.nvim repo](https://github.com/phaazon/hop.nvim) and by [@smoka7](https://github.com/smoka7).
+
+# Motivation
+
+The neohop will have another features that I'll add in the future.
+
+1. Integration with Neovim marks such as [Harpoon](https://github.com/ThePrimeagen/harpoon)
+
 **Hop** is an [EasyMotion](https://github.com/easymotion/vim-easymotion)-like plugin allowing you to jump anywhere in a
 document with as few keystrokes as possible. It does so by annotating text in
 your buffer with hints, short string sequences for which each character
@@ -52,7 +60,7 @@ This is a fork of the [original hop.nvim repo](https://github.com/phaazon/hop.nv
 
 ```lua
 {
-    'smoka7/hop.nvim',
+    'progmruansilva/neohop.nvim',
     version = "*",
     opts = {
         keys = 'etovxqpdygfblzhckisuran'
@@ -64,7 +72,7 @@ This is a fork of the [original hop.nvim repo](https://github.com/phaazon/hop.nv
 
 ```lua
 use {
-  'smoka7/hop.nvim',
+  'progmruansilva/neohop.nvim',
   tag = '*', -- optional but strongly recommended
   config = function()
     -- you can configure Hop the way you like here; see :h hop-config
@@ -111,18 +119,16 @@ vim.keymap.set('', 'T', function()
 end, {remap=true})
 ```
 
-
 # Other tools like hop.nvim
 
-* [sneak.nvim](https://github.com/justinmk/vim-sneak)
-* [EasyMotion](https://github.com/easymotion/vim-easymotion)
-* [Seek](https://github.com/goldfeld/vim-seek)
-* [smalls](https://github.com/t9md/vim-smalls)
-* [improvedft](https://github.com/chrisbra/improvedft)
-* [clever-f](https://github.com/rhysd/clever-f.vim)
-* [vim-extended-ft](https://github.com/svermeulen/vim-extended-ft)
-* [Fanf,ingTastic;](https://github.com/dahu/vim-fanfingtastic)
-* [IdeaVim-Sneak](https://plugins.jetbrains.com/plugin/15348-ideavim-sneak)
-* [leap.nvim](https://github.com/ggandor/leap.nvim)
-* [flash.nvim](https://github.com/folke/flash.nvim)
-
+- [sneak.nvim](https://github.com/justinmk/vim-sneak)
+- [EasyMotion](https://github.com/easymotion/vim-easymotion)
+- [Seek](https://github.com/goldfeld/vim-seek)
+- [smalls](https://github.com/t9md/vim-smalls)
+- [improvedft](https://github.com/chrisbra/improvedft)
+- [clever-f](https://github.com/rhysd/clever-f.vim)
+- [vim-extended-ft](https://github.com/svermeulen/vim-extended-ft)
+- [Fanf,ingTastic;](https://github.com/dahu/vim-fanfingtastic)
+- [IdeaVim-Sneak](https://plugins.jetbrains.com/plugin/15348-ideavim-sneak)
+- [leap.nvim](https://github.com/ggandor/leap.nvim)
+- [flash.nvim](https://github.com/folke/flash.nvim)
