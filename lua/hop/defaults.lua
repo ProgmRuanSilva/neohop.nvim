@@ -7,6 +7,7 @@ local hint = require('hop.hint')
 
 M.keys = 'asdghklqwertyuiopzxcvbnmfj'
 M.quit_key = '<Esc>'
+M.repeat_key = '<BS>'
 M.perm_method = require('hop.perm').TrieBacktrackFilling
 M.reverse_distribution = false
 M.x_bias = 10
@@ -18,10 +19,10 @@ M.case_insensitive = true
 M.create_hl_autocmd = true
 M.current_line_only = false
 M.dim_unmatched = true
-M.hl_mode = "combine"
+M.hl_mode = 'combine'
 M.uppercase_labels = false
 M.multi_windows = false
-M.windows_list = function ()
+M.windows_list = function()
   return vim.api.nvim_tabpage_list_wins(0)
 end
 M.ignore_injections = false

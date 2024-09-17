@@ -14,6 +14,7 @@ local api = vim.api
 ---@field dim_ns integer
 ---@field preview_ns integer
 ---@field diag_ns table
+---@field history table[]
 
 local M = {}
 
@@ -63,7 +64,7 @@ end
 ---@param a CursorPos Cursor Position
 ---@param b CursorPos Jump target position
 ---@param x_bias number
----@return number 
+---@return number
 function M.readwise_distance(a, b, x_bias)
   return (100 * math.abs(b.row - a.row)) + (b.col - a.col)
 end
@@ -176,6 +177,9 @@ function M.create_hint_state(opts)
 
   -- Backup namespaces of diagnostic
   hint_state.diag_ns = vim.diagnostic.get_namespaces()
+
+  -- Initialize history
+  hint_state.history = {}
 
   return hint_state
 end
